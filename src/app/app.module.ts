@@ -5,17 +5,23 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './Nav-Component/Nav.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './Home-Component/home.component';
-import { CitiesComponent } from './Cities-Component/cities.component';
+import { CapitalComponent } from './Capital-Component/capital.component';
 import { CountryService } from './Services/country.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LanguagesComponent } from './languages-Component/languages.component';
+import { RegionComponent } from './Region-Component/region.component';
+import { CountryComponent } from './Country-Component/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    CitiesComponent,
+    CapitalComponent,
+    LanguagesComponent,
+    RegionComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,10 @@ import { FormsModule } from '@angular/forms';
       { path: "home", component: HomeComponent},
       { path: "", redirectTo: "home", pathMatch: "full" },
       /*{ path: "**", component: PageNotFoundComponent},*/
-      { path: "cities", component: CitiesComponent },
+      { path: "cities", component: CapitalComponent },
+      { path: "languages", component: LanguagesComponent },
+      { path: "regions", component: RegionComponent },
+      { path: "country", component: CountryComponent },
     ], { useHash: false }),
     HttpClientModule,
     FormsModule

@@ -11,12 +11,16 @@ export class CountryService {
         return this._http.get<ICountry[]>(`https://restcountries.eu/rest/v2/capital/${capital}`)
     }
 
-    getLanguage(language:string): Observable<ICountry> {
-        return this._http.get<ICountry>(`https://restcountries.eu/rest/v2/lang/${language}`)
+    getLanguage(language:string): Observable<ICountry[]> {
+        return this._http.get<ICountry[]>(`https://restcountries.eu/rest/v2/lang/${language}`)
     }
     
-    getCurrency(currency:string): Observable<ICountry> {
-        return this._http.get<ICountry>(`https://restcountries.eu/rest/v2/currency/${currency}`)
+    getRegion(region:string): Observable<ICountry[]> {
+        return this._http.get<ICountry[]>(`https://restcountries.eu/rest/v2/region/${region}`)
+    }
+    
+    getCountry(country:string): Observable<ICountry[]> {
+        return this._http.get<ICountry[]>(`https://restcountries.eu/rest/v2/name/${country}`)
     }
 }
 

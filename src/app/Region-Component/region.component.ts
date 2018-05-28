@@ -3,21 +3,21 @@ import { ICountry } from '../Services/country.service';
 import { CountryService } from '../Services/country.service';
 
 @Component({
-    selector: 'app-Cities',
-    templateUrl: './cities.component.html'
+    selector: 'app-region',
+    templateUrl: './region.component.html'
 })
 
-export class CitiesComponent implements  OnInit{
+export class RegionComponent implements  OnInit{
 
-    Hoofdstad : ICountry;
-    _search: string = "brussel";
+    Regions : ICountry[];
+    _search: string = "Europe";
 
     constructor(private _svc: CountryService) {
     }
 
     ngOnInit() {
-        this._svc.getCapitalCity(this._search)
-            .subscribe(result => this.Hoofdstad = result[0]);
+        this._svc.getRegion(this._search)
+            .subscribe(result => this.Regions = result);
     }
 
     get Search() {
@@ -26,6 +26,6 @@ export class CitiesComponent implements  OnInit{
 
     set Search(value:string) {
         this._search = value;
-        this._svc.getCapitalCity(this._search).subscribe(result => this.Hoofdstad = result[0]);
+        this._svc.getRegion(this._search).subscribe(result => this.Regions = result);
     }
 }

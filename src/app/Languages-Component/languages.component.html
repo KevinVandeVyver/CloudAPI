@@ -1,0 +1,36 @@
+<div class="container" style="margin-top: 15px; margin-left: 5px;">
+        <div class="row">
+            <div class="col-md-4">
+                <p style="margin-top: 9px">Taal (ISO 639-1):</p>
+                <a href="https://nl.wikipedia.org/wiki/Lijst_van_ISO_639-codes" target="_blank">Klik hier</a>
+                <input type="text" class="form-control" [(ngModel)]="Search">
+            </div>
+        </div>
+    
+        <div *ngIf="Languages">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Vlag</th>
+                        <th>Hoofdstad</th>
+                        <th>Taal</th>
+                        <th>Continent</th>
+                        <th>Eenheid</th>
+                        <th>Symbol</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let taal of Languages">
+                    <tr>
+                        <td><img src="{{taal.flag}}" height="30px" width="30px"></td>
+                        <td>{{taal.capital}}</td>
+                        <td>{{taal.languages[0].name}}</td>
+                        <td>{{taal.region}}</td>
+                        <td>{{taal.currencies[0].name}}</td>
+                        <td>{{taal.currencies[0].symbol}}</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+    
+    </div>
