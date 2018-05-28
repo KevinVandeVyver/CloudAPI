@@ -2,21 +2,21 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
-Injectable()
-export class AirQualityDataService {
+@Injectable()
+export class CountryService {
 
     constructor(private _http: HttpClient) { }
 
-    getCapitalCity(capital): Observable<IRootObject> {
-        return this._http.get<IRootObject>(`https://restcountries.eu/rest/v2/capital/${capital}`)
+    getCapitalCity(capital:string): Observable<ICountry[]> {
+        return this._http.get<ICountry[]>(`https://restcountries.eu/rest/v2/capital/${capital}`)
     }
 
-    getLanguage(language): Observable<IRootObject> {
-        return this._http.get<IRootObject>(`https://restcountries.eu/rest/v2/lang/${language}`)
+    getLanguage(language:string): Observable<ICountry> {
+        return this._http.get<ICountry>(`https://restcountries.eu/rest/v2/lang/${language}`)
     }
     
-    getCurrency(currency): Observable<IRootObject> {
-        return this._http.get<IRootObject>(`https://restcountries.eu/rest/v2/currency/${currency}`)
+    getCurrency(currency:string): Observable<ICountry> {
+        return this._http.get<ICountry>(`https://restcountries.eu/rest/v2/currency/${currency}`)
     }
 }
 
@@ -53,7 +53,7 @@ export interface IRegionalBloc {
     otherNames: string[];
 }
 
-export interface IRootObject {
+export interface ICountry {
     name: string;
     topLevelDomain: string[];
     alpha2Code: string;
