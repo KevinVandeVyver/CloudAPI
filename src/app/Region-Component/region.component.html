@@ -11,6 +11,7 @@
                 <thead>
                     <tr>
                         <th>Vlag</th>
+                        <th>Land</th>
                         <th>Hoofdstad</th>
                         <th>Taal</th>
                         <th>Continent</th>
@@ -21,6 +22,7 @@
                 <tbody *ngFor="let Continent of Regions">
                     <tr>
                         <td><img src="{{Continent.flag}}" height="30px" width="30px"></td>
+                        <td>{{Continent.name}}</td>
                         <td>{{Continent.capital}}</td>
                         <td>{{Continent.languages[0].name}}</td>
                         <td>{{Continent.region}}</td>

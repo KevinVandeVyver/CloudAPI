@@ -12,6 +12,7 @@
                 <thead>
                     <tr>
                         <th>Vlag</th>
+                        <th>Land</th>
                         <th>Hoofdstad</th>
                         <th>Taal</th>
                         <th>Continent</th>
@@ -22,6 +23,7 @@
                 <tbody *ngFor="let taal of Languages">
                     <tr>
                         <td><img src="{{taal.flag}}" height="30px" width="30px"></td>
+                        <td>{{taal.name}}</td>
                         <td>{{taal.capital}}</td>
                         <td>{{taal.languages[0].name}}</td>
                         <td>{{taal.region}}</td>
