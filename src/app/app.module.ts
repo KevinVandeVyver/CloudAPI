@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { LanguagesComponent } from './languages-Component/languages.component';
 import { RegionComponent } from './Region-Component/region.component';
 import { CountryComponent } from './Country-Component/country.component';
+import { AuthService } from './Services/auth.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { CountryComponent } from './Country-Component/country.component';
     FormsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA],
-  providers: [CountryService],
+  providers: [CountryService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
