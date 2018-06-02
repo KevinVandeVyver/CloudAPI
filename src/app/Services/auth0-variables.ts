@@ -7,6 +7,6 @@ interface AuthConfig {
   export const AUTH_CONFIG: AuthConfig = {
     clientID: 'KlmOcONNVmnRk8dgo6HHXMBcvRFkcOD5',
     domain: 'cloudproject.eu.auth0.com',
-    callbackURL: 'http://localhost:3000/home'
+    callbackURL: 'http://localhost:4200/home'
   };
   
