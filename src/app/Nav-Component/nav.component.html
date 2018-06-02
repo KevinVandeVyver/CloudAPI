@@ -10,8 +10,8 @@
             <a [routerLink]="['/languages']" class="nav-item nav-link" href="#">Talen</a>
             <a [routerLink]="['/regions']" class="nav-item nav-link" href="#">Continenten</a>
             <a [routerLink]="['/country']" class="nav-item nav-link" href="#">Land</a>
-            <button class="btn btn-primary btn-margin" *ngIf="!auth"(click)="login()">Log in</button>
-            <button class="btn btn-primary btn-margin" *ngIf="auth"(click)="logout()">Log out</button>
+            <a class="nav-item nav-link" *ngIf="!auth"(click)="login()">Log in</a>
+            <a class="nav-item nav-link" *ngIf="auth"(click)="login()">Log out</a>
         </div>
     </div>
 </nav>
