@@ -1,0 +1,11 @@
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\bin\Debug\netcoreapp2.0\CloudAPI.deps.json
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\bin\Debug\netcoreapp2.0\CloudAPI.runtimeconfig.json
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\bin\Debug\netcoreapp2.0\CloudAPI.runtimeconfig.dev.json
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\bin\Debug\netcoreapp2.0\CloudAPI.dll
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\bin\Debug\netcoreapp2.0\CloudAPI.pdb
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.csprojResolveAssemblyReference.cache
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.csproj.CoreCompileInputs.cache
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.AssemblyInfoInputs.cache
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.AssemblyInfo.cs
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.dll
+D:\Documents\CloudAPI\CloudAPI\CloudAPI\obj\Debug\netcoreapp2.0\CloudAPI.pdb
